@@ -6,6 +6,9 @@ on:
     # - cron: '*/5 * * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write   # 👈 cần thêm dòng này
+
 jobs:
   generate-note:
     runs-on: ubuntu-latest
